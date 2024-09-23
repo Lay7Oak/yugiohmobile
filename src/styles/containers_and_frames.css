@@ -14,11 +14,11 @@
 /* game div with background image*/
 .framed {
   /* border */
-  border-style: solid;
+  border-style: solid 0.5rem;
   border-image-source: url("../assets/rpg/border-image.png");
   border-image-repeat: repeat;
   border-image-slice: 6 6 6 6;
-  border-image-width: 18px;
+  border-image-width: 10px;
   border-width: 15px;
   padding: 12px;
 

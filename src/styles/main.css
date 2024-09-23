@@ -58,6 +58,8 @@ a:hover{
 
 .container__right{
  width: 70%;
+ max-width: 100vw; /* A largura máxima será o tamanho da tela */
+  overflow: hidden;
 }
 
 .score_box{
@@ -71,14 +73,35 @@ a:hover{
     border-radius: 5px;
 }
 
+
+ #card-image{
+    height:150px; 
+    width:95px;
+} 
+
+#player-field-card{
+    height: 150px; 
+    width: 95px;
+  }
+  
+  #computer-field-card{
+    height: 150px; 
+    width: 95px;
+  }
+
+  #millenium2-size{
+    height: 70px;
+  }
+
+
 .card_details{
     background-color: #fff;
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 6rem;
+    height: 4rem;
     width: 100%;
 }
 
@@ -160,5 +183,6 @@ h5{
 
 #toggle-sound{
     margin-top: 0.1rem;
+    z-index: 100%;
     
 }
