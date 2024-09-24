@@ -5,7 +5,8 @@
 
 /* game div without background image*/
 
-@media only screen and (max-width: 917px) and (orientation: portrait) {
+@media only screen and (max-width: 917px) and (orientation: portrait),
+       only screen and (max-width: 917px) and (orientation: landscape) {
 
 .rpgui-container {
   /* position style and default z */
