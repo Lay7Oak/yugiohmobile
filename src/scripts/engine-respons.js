@@ -218,4 +218,17 @@ document.getElementById('toggle-sound').addEventListener('click', function toggl
     }
 });
 
+function checkScreenSize() {
+    if (window.innerWidth >= 919) {
+        window.location.href = "https://lay7oak.github.io/yu_gi_oh_JS/";
+    }
+}
+
+// Chama a função quando a página é carregada
+checkScreenSize();
+
+// Também pode ser útil verificar ao redimensionar a tela
+window.addEventListener('resize', checkScreenSize);
+
+
 init();
