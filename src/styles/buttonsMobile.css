@@ -2,6 +2,9 @@
 * Styling for buttons
 */
 /* button style */
+
+@media only screen and (max-width: 917px) and (orientation: portrait) {
+
 .rpgui-button {
   /* hide button default stuff */
   background-color: Transparent;
@@ -133,3 +136,5 @@
   background-image: url('img/button-golden-right-hover.png');
 }
 */
+
+}
