@@ -52,6 +52,7 @@
   }
 }
 
+
 /* Estilos gerais para o modal */
 .modal {
   display: none; /* Inicialmente escondida */
@@ -64,10 +65,11 @@
   height: 97%;
   max-width: 100%;
   padding: 0.5rem;
-  background-color: rgb(189, 133, 2);
+  background-color: #7a3e02;
   border-radius: 7px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+
   overflow-y: auto;
 }
 

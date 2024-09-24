@@ -230,6 +230,8 @@ checkScreenSize();
 // Também pode ser útil verificar ao redimensionar a tela
 window.addEventListener('resize', checkScreenSize);
 
+
+
 const closeBtn = document.querySelector('.close-btn');
     const modal = document.getElementById('instruction-box');
 
