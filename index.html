@@ -16,6 +16,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" 
     rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
     
     <!-- favicon -->
     <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
@@ -24,6 +29,39 @@
 </head>
 
 <body>
+     <!-- Aviso para rotacionar o dispositivo -->
+     <div id="rotate-device">
+        Por favor, vire seu dispositivo para o modo paisagem.
+    </div>
+
+    
+    <div id="instruction-box" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p>Instruções:</p><br>
+            <p>Este jogo é baseado em Pedra (Rock), Papel (Paper) e Tesoura (Scissors). 
+                <br>No momento, possui apenas 3 tipos de cartas.<br> 
+                Suas especificações aparecem no painel lateral à esquerda, embaixo da carta selecionada.</p><br>
+            
+            <p>No modo PC (Desktop/Computador), você pode visualizar as cartas do Jogador (Suas cartas) 
+                e suas especificações <br> ao passar o mouse por cima, e lançá-la ao clicá-la.</p><br>
+            
+            <p>Em telas menores, como celular, ao clicar uma vez, você pode visualizar a carta e suas especificações; <br>
+                clicando duas vezes seguidas, a carta é lançada.</p><br>
+            
+            <p>Para resetar cada jogada, clique no botão que aparece informando se você <br> Ganhou (Win), Perdeu (Lose) ou Empatou (Draw).</p><br>
+            
+            <p>O botão "Sound" liga e desliga o som.</p>
+            
+            <p>O painel "Win | Lose" conta vitórias e derrotas, respectivamente.</p>
+            
+            <p>Este jogo ainda não possui limite de jogadas.</p><br>
+            
+            <p>Divirta-se!</p>
+            
+            
+        </div>
+    </div>
 
     <audio  id="bgm" loop>
         <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3"/>
@@ -87,9 +125,13 @@
 
         </div>
     </div>
+
+    
     
 
     <script src="./src/scripts/engine-respons.js" defer></script>
- 
+
+
+    
 </body>
 </html>

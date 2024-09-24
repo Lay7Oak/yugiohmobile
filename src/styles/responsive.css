@@ -8,6 +8,86 @@
   user-select: none;
 }
 
+/* Define o aviso para telas pequenas em modo retrato */
+#rotate-device {
+  display: none;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Oculta o conteúdo principal por padrão */
+#landscape-content {
+  display: none;
+}
+
+/* Aplica apenas em telas menores (máximo de 768px de largura) e no modo retrato */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  #rotate-device {
+      display: block;
+      z-index: 100;
+      color: aliceblue;
+      background-color: #333;
+      width: 100%;
+      padding: 30px;
+  }
+
+  #landscape-content {
+      display: none;
+  }
+}
+
+/* Aplica em telas menores (máximo de 768px de largura) e no modo paisagem */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  #rotate-device {
+      display: none;
+  }
+
+  #landscape-content {
+      display: block;
+  }
+}
+
+/* Estilos gerais para o modal */
+.modal {
+  display: none; /* Inicialmente escondida */
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 97%;
+  height: 97%;
+  max-width: 100%;
+  padding: 0.5rem;
+  background-color: rgb(189, 133, 2);
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow-y: auto;
+}
+
+.modal-content p {
+  font-size: 15pt;
+  color: #e7e5e5;
+  line-height: 25px;
+  font-weight:lighter;
+  font-family: 'VT323', monospace;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  letter-spacing: 0.3rem;
+}
+
 
 /* responsive para celular*/
 /* @media only screen and (max-width: 927px) and (max-height: 927px) and (orientation: portrait) {

@@ -230,5 +230,24 @@ checkScreenSize();
 // Também pode ser útil verificar ao redimensionar a tela
 window.addEventListener('resize', checkScreenSize);
 
+const closeBtn = document.querySelector('.close-btn');
+    const modal = document.getElementById('instruction-box');
+
+    
+
+    // Função para exibir o modal sempre que a página carregar
+    function showInstructions() {
+        modal.style.display = 'block';
+    }
+
+
+    // Evento para fechar o modal ao clicar no botão "X"
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    // Exibir o modal ao carregar a página
+    window.onload = showInstructions;
+
 
 init();
