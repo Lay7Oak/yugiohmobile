@@ -172,7 +172,7 @@ async function drawSelectCard(index) {
 
 // Função para exibir o botão de resultado e resgatar o jogo
 async function drawButton(text) {
-    state.actions.button.innerText = `Result:${text.toUpperCase()} - Click to Restart`;
+    state.actions.button.innerText = `${text.toUpperCase()}`;
     state.actions.button.style.display = "block";
     state.actions.button.onclick = resetGame;
 }
@@ -218,17 +218,18 @@ document.getElementById('toggle-sound').addEventListener('click', function toggl
     }
 });
 
-function checkScreenSize() {
-    if (window.innerWidth >= 919) {
-        window.location.href = "https://lay7oak.github.io/yu_gi_oh_JS/";
-    }
-}
 
-// Chama a função quando a página é carregada
-checkScreenSize();
+ function checkScreenSize() {
+     if (window.innerWidth >= 919) {
+         window.location.href = "https://lay7oak.github.io/yu_gi_oh_JS/";
+     }
+ }
 
-// Também pode ser útil verificar ao redimensionar a tela
-window.addEventListener('resize', checkScreenSize);
+  //Chama a função quando a página é carregada
+ checkScreenSize();
+
+ //Também pode ser útil verificar ao redimensionar a tela
+ window.addEventListener('resize', checkScreenSize);
 
 
 
@@ -240,7 +241,6 @@ const closeBtn = document.querySelector('.close-btn');
         modal.style.display = 'block';
     }
     
-
     // Evento para fechar o modal ao clicar no botão "X"
     closeBtn.addEventListener('click', function() {
         modal.style.display = 'none';
